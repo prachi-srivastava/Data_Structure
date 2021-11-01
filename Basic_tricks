@@ -1,0 +1,2 @@
+# changing char to digit
+int digit = ch - '0';
