@@ -1,0 +1,6 @@
+Hash Table------------------Tuesday(9th)
+Stack And Queue-------------Wednesday(10th) & Thursday(11th)
+Array and String------------friday
+BST-------------------------Saturday & Sunday
+Trie
+Graphs
