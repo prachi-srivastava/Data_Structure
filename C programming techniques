@@ -1,0 +1,79 @@
+Function to change string to int ot float----atoi,atof
+typedef <old name> <new name> 
+   e.g typedef int counter
+   Counter i, j,k;
+   
+   
+   
+typedef uses
+====================
+
+struct Point3D {
+    int x;
+    int y;
+    int z;
+  };
+
+  struct Point3D p1;
+  p1.x = 0;
+  p1.y = 0;
+  p1.z = 0;
+
+--------------------
+typedef struct {
+    int x;
+    int y;
+    int z;
+  }  Point3D;
+
+  Point3D p1;
+  p1.x = 0;
+  p1.y = 0;
+  p1.z = 0
+  
+  
+  
+  Accessing struct variables using pointers
+  ================================================
+  typedef struct {
+  int year;
+  int month;
+  int day;
+} date;
+
+int main(void) {
+
+  date *today;
+  today = (date*)malloc(sizeof(date));
+
+  // the explicit way of accessing fields of our struct
+  (*today).day = 15;
+  (*today).month = 6;
+  (*today).year = 2012;
+
+  // the more readable shorthand way of doing it
+  today->day = 15;
+  today->month = 6;
+  today->year = 2012;
+  
+  Accessing struct variables wihout pointers
+  =============================================
+  typedef struct {
+  int year;
+  int month;
+  int day;
+} date;
+
+int main(void) {
+
+  date today;
+
+  today.day = 15;
+  today.month = 6;
+  today.year = 2012;
+
+  printf("the date is %d/%d/%d\n", today.day, today.month, today.year);
+
+  return 0;
+}
+  
