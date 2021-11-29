@@ -33,6 +33,20 @@ typedef struct {
   
   
   
+  Function Pointers
+  =========================
+  int add(int a, int b){
+    return a+b;
+}
+
+int main() {
+    int c;
+    int (*p)(int,int);
+    p = &add;...........................this can also be wriiten as  // p = add; 
+    printf("sum is %d",(*p)(2,3));...... this can also be written as // p(2,3)
+    return 0;
+}
+  
   Accessing struct variables using pointers
   ================================================
   typedef struct {
@@ -77,3 +91,11 @@ int main(void) {
   return 0;
 }
   
+while declaring function pointer , it is imp that we put braces
+correct way to declare it is.
+
+int (*func)(int a, int b);
+
+if we define it as 
+int * func(int a, int b);
+it means we have declared a  function which returns a integer pointer 
