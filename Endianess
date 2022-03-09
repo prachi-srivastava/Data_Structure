@@ -1,1 +1,4 @@
+ 
+ Big Endian is the normal way we wrote
+ 
  all x86_64 processors (Intel/AMD) use little-endian while IP/TCP uses big-endian.
