@@ -1,3 +1,15 @@
 
 
+client hello = record header + handshake header + client version + client random + session id + cipher suites + compression method + extension length + extension
+server hello = record header + handshake header + server version + server random + session id + cipher suites + compression method + extension length + extension
+
+
+server certificate = record header + handshake header + certificates length + certificate length + certificate 
+server key exchange = record header + handshake header + curve info + public key + signature 
+                                  signature = computed signature using server's private key (client random + server random + curve_info + public key)         
+ server hello done = record header + handshake header
+ client key exchange = record header + handshake header + public key
+        premaster secret =  calculte( server public key, client private key)
+                                          
+                                          
 Key Exchange ...this is used for extracting keys
