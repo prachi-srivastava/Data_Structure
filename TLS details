@@ -1,4 +1,4 @@
-
+In RSA cryptography, both the public and the private keys can encrypt a message; the opposite key from the one used to encrypt a message is used to decrypt it. 
 
 client hello = record header + handshake header + client version + client random + session id + cipher suites + compression method + extension length + extension
 server hello = record header + handshake header + server version + server random + session id + cipher suites + compression method + extension length + extension
